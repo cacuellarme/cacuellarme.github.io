@@ -1,0 +1,267 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #f8f9fa;
+}
+
+.superior{
+    background-color: #16181d;
+    padding: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+.enlace{
+    color: #4dba69;
+    cursor: pointer;
+}
+
+.cabezera{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #20232a;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.lista{
+    display: flex;
+    list-style: none;
+}
+
+.item a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.item a:hover{
+    background-color: #4dba69;
+    color: #20232a;
+    border-radius: 5px;
+}
+
+
+.item2 a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #20232a;
+    padding: 10px;
+    margin: 10px;
+    background-color: #4dba69;
+    border-radius: 5px;
+}
+
+.item2 a:hover{
+    background-color: #fff;
+    transition: .2s;
+}
+
+.buscar{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #282c34;
+    border-style: none;
+    color: #fff;
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+
+.header{
+    border: 1px ridge #20232a;
+    text-align: center;
+    height: 450px;
+    background-color: #282c34;
+}
+
+.titulo{
+    margin-top: 100px;
+    font-size: 3rem;
+    color: #4dba69;
+}
+
+.parrafo{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.a1{
+    color: #20232a;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 20px;
+    margin: 10px;
+    background-color: #4dba69;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.a2{
+    color: #4dba69;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.a1:hover{
+    background-color: #fff;
+    transition: .2s;
+}
+
+.a2:hover{
+    color: #fff;
+    transition: .3s;
+}
+
+.caja{
+    margin: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tarjeta{
+    width: 350px;
+    height: 390px;
+    border: 1px solid #d2d2d2;    
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    text-align: center;
+}
+
+.tarjeta h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #20232a;
+}
+
+.tarjeta img{
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.1);
+}
+
+.tarjeta img:hover{
+    transform: scale(1.1);
+    transition: .2s;
+}
+.tarjeta p{
+    
+    color: #20232a;
+    margin: 15px;
+}
+
+.tarjeta .p1{
+    margin: 15px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #016f5e;
+    color: #16181d;
+    color: #fff;
+    border-radius: 5px;
+    
+}
+
+
+.tarjeta .p2{
+    margin: 15px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #4dba69;
+    color: #16181d;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.piedepagina footer{
+    background-color: #20232a;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 200px;
+    color: #fff;
+}
+
+/*//////////////////***/
+
+.footer1{
+    height: 200px;
+    width: 300px;
+    margin-left: 5%;
+}
+
+.footer1 h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer1 h4{
+    margin-top: 20px;
+}
+/*///////////////// ***/
+.footer2 {
+    height: 200px;
+    width: 300px;
+}
+
+.footer2 h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer2 h4{
+    margin-top: 10px;
+}
+
+
+
+
+/*/////////////// */
+
+.footer3 {
+    height: 200px;
+    width: 300px;
+}
+
+.footer3 h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.footer3 h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer3  .icono{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.enviar{
+    padding: 10px;
+    background-color:#282c34;
+    font-size: 15px;
+    border-style: none;
+    color: lightgrey;
+}

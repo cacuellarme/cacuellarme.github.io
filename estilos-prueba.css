@@ -16,7 +16,6 @@ body{
 
 .contenido{
     background-color: #154360;
-    width: 100%;
     min-width: fit-content;
     height: 400px;
     text-align: center;
@@ -29,8 +28,10 @@ body{
 }
 
 .parrafo{
+    display: block;
     font-size: 1.5em;
-    margin: 0px 20px;
+    margin: 0px 40px;
+    
 }
 
 .contenido1{

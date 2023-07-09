@@ -1,24 +1,34 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
 body{
     background-color: #f8f9fa;
+    overflow-x: hidden;
 }
 
+
 .superior{
+    height: 8vh;
     background-color: #16181d;
-    padding: 15px;
     color: #fff;
     font-weight: bold;
-    text-align: center;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+span > strong{
+    color: #4dba69;
 }
 
 .enlace{
-    color: #4dba69;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -27,6 +37,7 @@ body{
     justify-content: space-around;
     align-items: center;
     background-color: #20232a;
+    height: 13vh;
 }
 
 .logo{
@@ -45,6 +56,7 @@ body{
     padding: 10px;
     font-size: 1rem;
     color: #fff;
+    transition: all .3s ease-in-out;
 }
 
 .item a:hover{
@@ -67,7 +79,7 @@ body{
 
 .item2 a:hover{
     background-color: #fff;
-    transition: .2s;
+    transition: all .3s ease-in-out;
 }
 
 .buscar{
@@ -82,14 +94,14 @@ body{
 
 
 .header{
-    border: 1px ridge #20232a;
     text-align: center;
-    height: 450px;
+    height: 70vh;
     background-color: #282c34;
+    padding: 80px 20px;
 }
 
 .titulo{
-    margin-top: 100px;
+    
     font-size: 3rem;
     color: #4dba69;
 }
@@ -99,6 +111,7 @@ body{
     font-size: 1.4rem;
     color: #fff;
     margin-bottom: 100px;
+    padding: 0 20px;
 }
 
 .a1{
@@ -121,12 +134,12 @@ body{
 
 .a1:hover{
     background-color: #fff;
-    transition: .2s;
+    transition: all .3s ease-in-out;
 }
 
 .a2:hover{
     color: #fff;
-    transition: .3s;
+    transition: all .3s ease-in-out;
 }
 
 .caja{
@@ -158,11 +171,13 @@ body{
     width: 200px;
     height: 200px;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.1);
+    transition: all .3s ease-in-out;
 }
 
 .tarjeta img:hover{
-    transform: scale(1.1);
-    transition: .2s;
+    transform: scale3d(1.1, 1.1, 1.1);
+    
+    
 }
 .tarjeta p{
     
@@ -193,64 +208,48 @@ body{
 }
 
 .piedepagina footer{
+    width: 100vw;
+    height: 40vh;
     background-color: #20232a;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
-    height: 200px;
     color: #fff;
+    
 }
 
 /*//////////////////***/
 
-.footer1{
-    height: 200px;
-    width: 300px;
-    margin-left: 5%;
+.footer1, .footer2, .footer3{
+    width: 30vw;
+    height: 30vh;
 }
 
-.footer1 h3{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.footer1, .footer2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    padding: 20px;
 }
 
-.footer1 h4{
-    margin-top: 20px;
+.footer3{
+    padding: 20px;
 }
+
+.footer3 *{
+    margin: 0 10px 20px 0;
+}
+
+
 /*///////////////// ***/
-.footer2 {
-    height: 200px;
-    width: 300px;
-}
-
-.footer2 h3{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.footer2 h4{
-    margin-top: 10px;
-}
-
 
 
 
 /*/////////////// */
 
-.footer3 {
-    height: 200px;
-    width: 300px;
-}
 
-.footer3 h3{
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
 
-.footer3 h4{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
 
 .footer3  .icono{
     width: 20px;
@@ -264,4 +263,79 @@ body{
     font-size: 15px;
     border-style: none;
     color: lightgrey;
+}
+
+
+
+.hambu{
+    width: 20px;
+    height: auto;
+    display: none;
+    cursor: pointer;
+    
+}
+
+
+@media screen and (max-width:875px) {
+    .hambu{
+        display: block;
+        margin-right: 10px;
+        filter: invert(1);
+    }
+
+    .lista{
+        left: 0;
+        top: 21vh;
+        width: 100vw;
+        height: 70%;
+        background: #fafafa10;
+        
+        backdrop-filter: blur(10px);
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 0 0 10px 0;
+        transition: transform 0.3s;
+        transform: translateX(-100vw);
+               
+    }
+
+    
+    .cambio{
+        transform: translateX(0);
+    }
+
+
+    .contacto{
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:870px) {
+    .piedepagina footer{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px 0;
+        padding: 20px 0;
+    }
+
+    .footer1, .footer2, .footer3{
+        width: 60vw;
+        height: 30vh;
+        
+    }
+
 }

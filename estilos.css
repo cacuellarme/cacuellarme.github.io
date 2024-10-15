@@ -344,8 +344,8 @@ span > strong{
 @media screen and (max-width:870px) {
     .tarjeta p{
         color: #20232a;
-        margin: 10px;
-        font-size: 1rem;
+        margin: 15px;
+        font-size: .9rem;
     }
 
     

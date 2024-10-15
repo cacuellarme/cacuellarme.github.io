@@ -150,8 +150,8 @@ span > strong{
 }
 
 .tarjeta{
-    min-width: 390px;
-    min-height: 390px;
+    width: 360px;
+    height: 390px;
     border: 1px solid #d2d2d2;    
     margin: 20px;
     background-color: #fff;
@@ -180,7 +180,6 @@ span > strong{
     
 }
 .tarjeta p{
-    
     color: #20232a;
     margin: 15px;
 }
@@ -193,7 +192,6 @@ span > strong{
     color: #16181d;
     color: #fff;
     border-radius: 5px;
-    
 }
 
 
@@ -339,3 +337,5 @@ span > strong{
     }
 
 }
+
+

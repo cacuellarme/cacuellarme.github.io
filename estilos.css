@@ -341,7 +341,7 @@ span > strong{
 
 
 
-@media screen and (max-width:870px) {
+@media screen and (max-width:360px) {
     .tarjeta p{
         color: #20232a;
         margin: 15px;

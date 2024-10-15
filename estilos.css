@@ -241,9 +241,9 @@ span > strong{
 
 
 .footer4{
-    border: 1px solid red;
     width: 100vw;
-    height: 10vh;
+    height: 5vh;
+    text-align: center;
 }
 
 /*///////////////// ***/

@@ -24,7 +24,7 @@ body{
 }
 
 span > strong{
-    color: #4dba69;
+    color: #27aae1;
 }
 
 .enlace{
@@ -60,7 +60,7 @@ span > strong{
 }
 
 .item a:hover{
-    background-color: #4dba69;
+    background-color: #27aae1;
     color: #20232a;
     border-radius: 5px;
 }
@@ -73,7 +73,7 @@ span > strong{
     color: #20232a;
     padding: 10px;
     margin: 10px;
-    background-color: #4dba69;
+    background-color: #27aae1;
     border-radius: 5px;
 }
 
@@ -103,11 +103,11 @@ span > strong{
 .titulo{
     
     font-size: 3rem;
-    color: #4dba69;
+    color: #27aae1;
 }
 
 .subtitulo{
-    color: #4dba69;
+    color: #27aae1;
 }
 
 .parrafo{
@@ -124,13 +124,13 @@ span > strong{
     font-size: 1rem;
     padding: 20px;
     margin: 10px;
-    background-color: #4dba69;
+    background-color: #27aae1;
     font-weight: bold;
     border-radius: 5px;
 }
 
 .a2{
-    color: #4dba69;
+    color: #27aae1;
     text-decoration: none;
     font-size: 1rem;
     margin: 10px;
@@ -192,7 +192,7 @@ span > strong{
     margin: 15px;
     text-decoration: none;
     padding: 10px;
-    background-color: #016f5e;
+    background-color: #1a769e;
     color: #16181d;
     color: #fff;
     border-radius: 5px;
@@ -203,7 +203,7 @@ span > strong{
     margin: 15px;
     text-decoration: none;
     padding: 10px;
-    background-color: #4dba69;
+    background-color: #27aae1;
     color: #16181d;
     border-radius: 5px;
     color: #fff;

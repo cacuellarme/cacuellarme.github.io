@@ -111,12 +111,11 @@ span > strong{
 }
 
 .parrafo{
-    margin: 25px 100px;
-    /*margin-top: 25px; */
+    margin: 25px 300px 50px 300px;
     font-size: 1.4rem;
     color: #fff;
-    /*margin-bottom: 100px; */
     padding: 0 20px;
+    border: 1px solid red;
 }
 
 .a1{
@@ -321,6 +320,13 @@ span > strong{
         display: none;
     }
 
+    .header{
+        text-align: center;
+        height: 100vh;
+        background-color: #282c34;
+        padding: 80px 20px;
+    }
+
 }
 
 
@@ -347,12 +353,16 @@ span > strong{
         
     }
 
+    .parrafo{
+        font-size: 1rem;
+    }
+
 }
 
 
 
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:678px) {
 
     .tarjeta{
         width: 360px;
@@ -373,6 +383,21 @@ span > strong{
 
     .span-footer{
         font-size: .9rem;
+    }
+
+    .parrafo{
+        font-size: .9rem;
+        margin-top: 25px;
+        color: #fff;
+        margin-bottom: 100px;
+        padding: 0 20px;
+    }
+
+    .header{
+        text-align: center;
+        height: 100vh;
+        background-color: #282c34;
+        padding: 80px 20px;
     }
 
     

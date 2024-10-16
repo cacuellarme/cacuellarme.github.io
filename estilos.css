@@ -320,13 +320,6 @@ span > strong{
         display: none;
     }
 
-    .header{
-        text-align: center;
-        height: 100vh;
-        background-color: #282c34;
-        padding: 80px 20px;
-    }
-
 }
 
 
@@ -351,10 +344,6 @@ span > strong{
         width: 60vw;
         height: 30vh;
         
-    }
-
-    .parrafo{
-        font-size: 1rem;
     }
 
 }
@@ -384,23 +373,6 @@ span > strong{
     .span-footer{
         font-size: .9rem;
     }
-
-    .parrafo{
-        font-size: .9rem;
-        margin-top: 25px;
-        color: #fff;
-        margin-bottom: 100px;
-        padding: 0 20px;
-    }
-
-    .header{
-        text-align: center;
-        height: 100vh;
-        background-color: #282c34;
-        padding: 80px 20px;
-    }
-
-    
 
 }
 

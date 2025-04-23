@@ -1,140 +1,415 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Portafolio | Cesar Cuellar">
-    <meta property="og:url" content="https://cacuellarme.github.io/">
-    <meta property="og:image" content="https://raw.githubusercontent.com/cacuellarme/cacuellarme.github.io/main/opengra.jpg">
-    <meta property="og:description" content="Portafolio personal de Cesar Cuellar para mostrar sus conocimientos de Desarrollo Web">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos.css">
-    <link class="favicon" rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <title>Cesar Cuellar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    <title>Bootstrap</title>
 </head>
 <body>
-    <div class="superior">
-        <span class="enlace">Lo invitamos a que lea nuestra politica de la información.
-        👉 <strong>www.paginaweb.com</strong></span>
-    </div>
-    <div class="cabezera">
-        <img class="logo" src="pedal-de-arranque.png" alt="logo">
-        <nav>
-            <ul class="lista">
-                <li class="item"><a href="">Inicio</a></li>
-                <li class="item"><a href="">Servicios</a></li>
-                <li class="item"><a href="">Productos</a></li>
-                <li class="item"><a href="">Tienda</a></li>
-                <li class="item"><a href="">Cuenta</a></li>
-                <li class="item"><a href="portafolio.html">Portafolio</a></li>
-            </ul>
-        </nav>
-        <input type="search" name="buscar" id="buscar" class="buscar" placeholder="Search">
-        <div class="item2">
-            <a class="contacto" href="#">Acerda de</a>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
+        <div class="container-fluid justify-content-between m-2">
+            <a class="navbar-brand text-primary-emphasis fw-bold " href="#">tumaCODEV</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link  text-primary-emphasis fw-bold" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary-emphasis fw-bold" href="#">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary-emphasis fw-bold" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary-emphasis fw-bold" href="#">Acerca de</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <img src="bars-solid.svg" class="hambu" id="hambuid">
+    </nav>
+
+    <!--Header-->
+
+    <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4" src="./icons/coding_1440131.png" alt="" width="72" height="72">
+        <h1 class="display-5 fw-bold text-primary-emphasis">Cesar Cuellar</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4 text-secondary-emphasis fw-normal">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
+                popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
+                extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-outline-primary btn-lg px-4 gap-3">Más información</button>
+                <button type="button" class="btn btn-outline-success btn-lg px-4">Escríbeme</button>
+            </div>
+        </div>
     </div>
 
-    <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="px-4 py-5 my-5 text-center">
-                    <h1 class="display-5 fw-bold">Cesar Cuellar</h1>
-                    <div class="col-lg-6 mx-auto">
-                        <p class="lead mb-4">Diseñe y personalice rápidamente sitios web con capacidad de respuesta y orientados primero a dispositivos móviles con Bootstrap, el conjunto de herramientas de código abierto para front-end más popular del mundo, que incluye variables y mixins de Sass, un sistema de cuadrícula con capacidad de respuesta, un gran número de componentes predefinidos y potentes plugins de JavaScript.</p>
-                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                            <button type="button" class="btn btn-success btn-lg px-4 gap-3">Más información</button>
+    <!--Cards-->
+
+    <div class="album py-5 bg-body-secondary">
+        <div class="container">
+    
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./images/img1.svg" alt="" srcset="">
+    
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque explicabo fugiat? Error iure dicta at debitis beatae reprehenderit natus magnam recusandae.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary">Ver</button>
+                                    <button type="button" class="btn btn-sm btn-outline-success">Editar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./images/img2.svg" alt="" srcset="">
+                
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque explicabo
+                                fugiat? Error iure dicta at debitis beatae reprehenderit natus magnam recusandae.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary">Ver</button>
+                                    <button type="button" class="btn btn-sm btn-outline-success">Editar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./images/img3.svg" alt="" srcset="">
+                
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque explicabo
+                                fugiat? Error iure dicta at debitis beatae reprehenderit natus magnam recusandae.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary">Ver</button>
+                                    <button type="button" class="btn btn-sm btn-outline-success">Editar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./images/img4.svg" alt="" srcset="">
+                
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque explicabo
+                                fugiat? Error iure dicta at debitis beatae reprehenderit natus magnam recusandae.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary">Ver</button>
+                                    <button type="button" class="btn btn-sm btn-outline-success">Editar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./images/img5.jpg" alt="" srcset="">
+                
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque explicabo
+                                fugiat? Error iure dicta at debitis beatae reprehenderit natus magnam recusandae.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary">Ver</button>
+                                    <button type="button" class="btn btn-sm btn-outline-success">Editar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./images/img6.svg" alt="" srcset="">
+                
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque explicabo
+                                fugiat? Error iure dicta at debitis beatae reprehenderit natus magnam recusandae.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary">Ver</button>
+                                    <button type="button" class="btn btn-sm btn-outline-success">Editar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./images/img7.jpg" alt="" srcset="">
+                
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque explicabo
+                                fugiat? Error iure dicta at debitis beatae reprehenderit natus magnam recusandae.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary">Ver</button>
+                                    <button type="button" class="btn btn-sm btn-outline-success">Editar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./images/img8.svg" alt="" srcset="">
+                
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque explicabo
+                                fugiat? Error iure dicta at debitis beatae reprehenderit natus magnam recusandae.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary">Ver</button>
+                                    <button type="button" class="btn btn-sm btn-outline-success">Editar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./images/img9.svg" alt="" srcset="">
+                
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque explicabo
+                                fugiat? Error iure dicta at debitis beatae reprehenderit natus magnam recusandae.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary">Ver</button>
+                                    <button type="button" class="btn btn-sm btn-outline-success">Editar</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
+    </div>    
     
-    <div class="caja">
-        <div class="tarjeta">
-            <h3>Desarrollo Web</h3>
-            <img src="3094293.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores beatae ipsam nulla, odio, ratione illum consequuntur asperiores.</p>
-            <a class="p1" href="#">Ver Detalles</a>
-            <a class="p2" href="#">Comprar</a>
-        </div>
-        <div class="tarjeta">
-            <h3>Aplicaciones Moviles</h3>
-            <img src="3094293.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores beatae ipsam nulla, odio, ratione illum consequuntur asperiores.</p>
-            <a class="p1" href="#">Ver Detalles</a>
-            <a class="p2" href="#">Comprar</a>
-        </div>
-        <div class="tarjeta">
-            <h3>Servicio en la Nube</h3>
-            <img src="3094293.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores beatae ipsam nulla, odio, ratione illum consequuntur asperiores.</p>
-            <a class="p1" href="#">Ver Detalles</a>
-            <a class="p2" href="#">Comprar</a>
-        </div>
-        <div class="tarjeta">
-            <h3>E-commerce</h3>
-            <img src="3094293.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores beatae ipsam nulla, odio, ratione illum consequuntur asperiores.</p>
-            <a class="p1" href="#">Ver Detalles</a>
-            <a class="p2" href="#">Comprar</a>
-        </div>
-        <div class="tarjeta">
-            <h3>Tienda Online</h3>
-            <img src="3094293.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores beatae ipsam nulla, odio, ratione illum consequuntur asperiores.</p>
-            <a class="p1" href="#">Ver Detalles</a>
-            <a class="p2" href="#">Comprar</a>
-        </div>
-        <div class="tarjeta">
-            <h3>Seguridad de la información</h3>
-            <img src="3094293.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores beatae ipsam nulla, odio, ratione illum consequuntur asperiores.</p>
-            <a class="p1" href="#">Ver Detalles</a>
-            <a class="p2" href="#">Comprar</a>
+    <!--Section-->
+
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./images/bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Section Responsiva alineada a la izquierda con imagen</h1>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet saepe tempora nostrum minus, ut officia repellat molestias nobis laboriosam quas accusamus facere necessitatibus doloremque error porro, expedita eius quos totam cum? Cum?</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-outline-primary btn-lg px-4 me-md-2">Primary</button>
+                    <button type="button" class="btn btn-outline-success btn-lg px-4">Default</button>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="piedepagina">
-        <footer>
-            <div class="footer1">
-                <h3>CesCuellar Dev</h3>
-                <span class="span-footer">CesCuellar Dev es una agencia digital de Diseño y Desarrollo de Sitios Web, Software Empresariales, Aplicaciones Moviles y mas servicios para diferentes tipos de negocios, ubicada en Tumaco, Colombia.</span>
+
+    <!--Section 2 -->
+
+    <div class="container px-4 py-5 bg-body-secondary" id="featured-3">
+        <h2 class="pb-2 border-bottom">Marcas tecnológicas</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col">
+                <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="#30d780" class="bi bi-android2"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m10.213 1.471.691-1.26q.069-.124-.048-.192-.128-.057-.195.058l-.7 1.27A4.8 4.8 0 0 0 8.005.941q-1.032 0-1.956.404l-.7-1.27Q5.281-.037 5.154.02q-.117.069-.049.193l.691 1.259a4.25 4.25 0 0 0-1.673 1.476A3.7 3.7 0 0 0 3.5 5.02h9q0-1.125-.623-2.072a4.27 4.27 0 0 0-1.664-1.476ZM6.22 3.303a.37.37 0 0 1-.267.11.35.35 0 0 1-.263-.11.37.37 0 0 1-.107-.264.37.37 0 0 1 .107-.265.35.35 0 0 1 .263-.11q.155 0 .267.11a.36.36 0 0 1 .112.265.36.36 0 0 1-.112.264m4.101 0a.35.35 0 0 1-.262.11.37.37 0 0 1-.268-.11.36.36 0 0 1-.112-.264q0-.154.112-.265a.37.37 0 0 1 .268-.11q.155 0 .262.11a.37.37 0 0 1 .107.265q0 .153-.107.264M3.5 11.77q0 .441.311.75.311.306.76.307h.758l.01 2.182q0 .414.292.703a.96.96 0 0 0 .7.288.97.97 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h1.343v2.182q0 .414.292.703a.97.97 0 0 0 .71.288.97.97 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h.76q.436 0 .749-.308.31-.307.311-.75V5.365h-9zm10.495-6.587a.98.98 0 0 0-.702.278.9.9 0 0 0-.293.685v4.063q0 .406.293.69a.97.97 0 0 0 .702.284q.42 0 .712-.284a.92.92 0 0 0 .293-.69V6.146a.9.9 0 0 0-.293-.685 1 1 0 0 0-.712-.278m-12.702.283a1 1 0 0 1 .712-.283q.41 0 .702.283a.9.9 0 0 1 .293.68v4.063a.93.93 0 0 1-.288.69.97.97 0 0 1-.707.284 1 1 0 0 1-.712-.284.92.92 0 0 1-.293-.69V6.146q0-.396.293-.68" />
+                </svg>
+                <h2>Android</h2>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+                    probably just keep going until we run out of words.</p>
+                <button type="button" class="btn btn-outline-success">Ver más</button>
             </div>
-            <div class="footer2">
-                <h3>Contacto</h3>
-                <span class="span-footer">Barrio El Porvenir (Carbonera), Tumaco-Nariño, Colombia</span>
-                <h4>+57 311 636 4064</h4>
-                <h4>cacuellarme.@unadvirtual.edu.co</h4>
+            <div class="feature col">
+                <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="#b7b7b7" class="bi bi-apple"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282" />
+                    <path
+                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282" />
+                </svg>
+                <h2>Apple</h2>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+                    probably just keep going until we run out of words.</p>
+                <button type="button" class="btn btn-outline-secondary">Ver más</button>
             </div>
-            <div class="footer3">
-                <h3>Redes Sociales</h3>
-                <a href="https://www.facebook.com/cescuellar07/" target="_blank"><img src="facebook.png" alt="facebook" class="icono"></a>
-                <a href="https://www.instagram.com/cacuellarme/" target="_blank"><img src="instagram.png" alt="instagram" class="icono"></a>
-                <a href="http://wa.me/+573116364064" target="_blank"><img src="whatsapp.png" alt="whatsapp" class="icono"></a>
-                <a href="https://x.com/Alexandercapo_?t=fY0T7c4o9Ieg1WZdge59UQ&s=08" target="_blank"><img src="gorjeo.png" alt="twitter" class="icono"></a>
-                <h4>Suscribete para mas información</h4>
-                <input type="email" name="enviar" id="enviar" class="enviar" placeholder="Input your email here">
+            <div class="feature col">
+                <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="#0078d4" class="bi bi-windows"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M6.555 1.375 0 2.237v5.45h6.555zM0 13.795l6.555.933V8.313H0zm7.278-5.4.026 6.378L16 16V8.395zM16 0 7.33 1.244v6.414H16z" />
+                </svg>
+                <h2>Windows</h2>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+                    probably just keep going until we run out of words.</p>
+                <button type="button" class="btn btn-outline-primary">Ver más</button>
             </div>
-            <div class="footer4">
-                <h4>Copyright &copy CesCuellar Developer</h4>
+        </div>
+    </div>
+
+    <!--Section 3-->
+
+    <div class="container py-3">
+        <header>
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 fw-normal">Precios</h1>
+                <p class="fs-5 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quo, dolorum recusandae nulla rerum officia asperiores modi accusantium voluptatibus ipsa, deleniti commodi? Officia nesciunt laudantium excepturi velit alias obcaecati ad!</p>
+            </div>
+        </header>
+
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Gratis</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$0.00 al mes</h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>10 usuarios incluidos</li>
+                            <li>2 GB de almacenamiento</li>
+                            <li>Soporte de correo electronico</li>
+                            <li>Acceso al centro de ayuda</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Registrese gratis</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Profesional</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$150.000 COP al mes</h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>20 usuarios incluidos</li>
+                            <li>10 GB de almacenamiento</li>
+                            <li>Asistencia prioritaria por correo electronico</li>
+                            <li>Acceso al centro de ayuda</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary">Empezar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-white bg-primary border-primary">
+                        <h4 class="my-0 fw-normal">Empresarial</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$300.000 COP al mes</h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>30 usuarios incluidos</li>
+                            <li>50 GB de almacenamiento</li>
+                            <li>Asistencia telefónica y por correo electronico</li>
+                            <li>Acceso al centro de ayuda</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary">Contáctenos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Footer-->
+
+    <div class="container">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Inicio</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Proyectos</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Servicios</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Precios</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Acerca de</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Inicio</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Proyectos</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Servicios</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Precios</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Acerca de</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Inicio</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Proyectos</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Servicios</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Precios</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Acerca de</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Suscríbete a nuestro boletín informativo.</h5>
+                        <p>Resumen mensual de nuestras novedades.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="email" class="form-control" placeholder="Direccion de correo electronico">
+                            <button class="btn btn-primary" type="button">Suscríbete</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>&copy; 2025 Ccuellarm, Inc. Todos los derechos reservados.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi"
+                                width="24" height="24">
+                                <use xlink:href="#instagram" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi" width="24"
+                                height="24" aria-hidden="true">
+                                <use xlink:href="#facebook" />
+                            </svg></a></li>
+                </ul>
             </div>
         </footer>
     </div>
-    
-    <script src="javascript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
 </body>
 </html>

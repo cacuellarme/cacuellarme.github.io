@@ -1,0 +1,23 @@
+.navbar .navbar-nav .nav-link:hover{
+    color: orange !important;
+}
+
+.navbar .navbar-brand:hover{
+    color: orangered !important;
+}
+
+.bi-instagram:hover{
+    color: #d30164;
+}
+
+.bi-facebook:hover{
+    color: #1877f2;
+}
+
+.bi-youtube:hover{
+    color: #ff0000;
+}
+
+.bi-whatsapp:hover{
+    color: #25D366;
+}
